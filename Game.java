@@ -153,8 +153,7 @@ public class Game {
     }
     public boolean isOutOfBounds(int a, int b) {
         if (a < 0 || b < 0) return true;
-        if (a >= boardSize || b >= boardSize) return true;
-        return false;
+        return (a >= boardSize || b >= boardSize);
     }
 }
 
